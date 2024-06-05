@@ -1,0 +1,37 @@
+test_configs = {
+        'lr': 1e-5,
+        'adam_betas': (0.9, 0.98),
+        'adam_eps': 1e-9,
+        'd_model': 32,
+        'ffn_hidden': 64,
+        'dropout': 0.1,
+        'sequence_max_len': 128,
+        'head': 8,
+        'batch_size': 8,
+        'epochs': 1,
+        'max_steps': 1000,
+        'transformer_block_num': 2,
+        'data_root_path': './data/Multi30k',
+        'model_save_path': './model/transformer/transformer.pt',
+        'weight_decay': 1e-5,
+        'show_loss_steps': 100,
+}
+
+standard_configs = {
+        'adam_betas': (0.9, 0.98),
+        'adam_eps': 1e-9,
+        'd_model': 512,
+        'ffn_hidden': 2048,
+        'dropout': 0.1,
+        'sequence_max_len': 256,
+        'head': 8,
+        'batch_size': 128,
+        'epochs': 100,
+        'max_steps': 100000,
+        'transformer_block_num': 6,
+        'data_root_path': './data/Multi30k',
+        'model_save_path': './model/transformer/transformer.pt',
+        'weight_decay': 1e-5,
+        'show_loss_steps': 100,
+        'warmup_steps': 4000
+}
